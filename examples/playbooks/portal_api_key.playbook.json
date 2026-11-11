@@ -1,0 +1,42 @@
+{
+  "schema": "based-clef/playbook@1",
+  "raw_intent": "Search 'clef-flash' -> click 'Filter Catalog' -> click 'Generate API Key'",
+  "goal": "Search 'clef-flash' -> click 'Filter Catalog' -> click 'Generate API Key'",
+  "start_url": null,
+  "driver": "browser",
+  "required_keys": [
+    "search"
+  ],
+  "parameters": {
+    "search": "clef-flash"
+  },
+  "stages": [
+    {
+      "id": 1,
+      "intent": "Search 'clef-flash'",
+      "kind": "fill",
+      "target_hint": "clef-flash",
+      "value_key": "search",
+      "sensitive": false,
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "intent": "click 'Filter Catalog'",
+      "kind": "click",
+      "target_hint": "Filter Catalog",
+      "value_key": "",
+      "sensitive": false,
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "intent": "click 'Generate API Key'",
+      "kind": "click",
+      "target_hint": "Generate API Key",
+      "value_key": "",
+      "sensitive": false,
+      "status": "pending"
+    }
+  ]
+}

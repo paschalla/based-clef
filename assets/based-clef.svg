@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="vinyl-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#141824" />
+      <stop offset="70%" stop-color="#0a0c10" />
+      <stop offset="100%" stop-color="#040507" />
+    </radialGradient>
+    <linearGradient id="neon-bass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a85" />
+      <stop offset="50%" stop-color="#b829dd" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+    <linearGradient id="dot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a85" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+    <filter id="sub-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur1" />
+      <feGaussianBlur stdDeviation="24" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer squircle chassis with vinyl sound grooves -->
+  <rect x="24" y="24" width="464" height="464" rx="104" ry="104" fill="url(#vinyl-bg)" stroke="#222938" stroke-width="4" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#ff2a85" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="12 8" />
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#00f0ff" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="8 6" />
+
+  <!-- Sub-bass waveform pulse underlay -->
+  <path d="M 60 410 Q 110 390 160 410 T 260 410 T 360 410 T 452 410" fill="none" stroke="#ff2a85" stroke-opacity="0.25" stroke-width="3" />
+  <path d="M 60 425 Q 110 440 160 425 T 260 425 T 360 425 T 452 425" fill="none" stroke="#00f0ff" stroke-opacity="0.25" stroke-width="2" />
+
+  <!-- THE BASED BASS CLEF (𝄢) -->
+  <g filter="url(#sub-glow)">
+    <!-- Bass clef body: heavy low-end loop tapering down -->
+    <!-- Starting node hub: (210, 160) radius 26 -->
+    <circle cx="210" cy="160" r="28" fill="url(#neon-bass)" />
+    <circle cx="210" cy="160" r="12" fill="#ffffff" />
+
+    <!-- Main sweeping curve of the Bass Clef -->
+    <!-- From top loop, arching over to the right and sweeping down past center -->
+    <path d="M 210 160 
+             C 210 90, 330 90, 330 170 
+             C 330 250, 240 310, 180 370" 
+          fill="none" 
+          stroke="url(#neon-bass)" 
+          stroke-width="32" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- The 2 Iconic Clef Probability Dots (P_target, P_action) -->
+    <!-- Upper Dot (Target Lock) -->
+    <circle cx="380" cy="140" r="20" fill="url(#dot-grad)" />
+    <circle cx="380" cy="140" r="7" fill="#ffffff" />
+
+    <!-- Lower Dot (Action Fire) -->
+    <circle cx="380" cy="200" r="20" fill="url(#dot-grad)" />
+    <circle cx="380" cy="200" r="7" fill="#ffffff" />
+  </g>
+
+  <!-- Typography badge at bottom -->
+  <text x="256" y="465" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="6" fill="#ffffff" opacity="0.9">BASED CLEF</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="hex-carbon" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1f232b" />
+      <stop offset="70%" stop-color="#121418" />
+      <stop offset="100%" stop-color="#0a0b0e" />
+    </radialGradient>
+    <linearGradient id="sunset-flow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />    <!-- Purple -->
+      <stop offset="50%" stop-color="#f43f5e" />   <!-- Pink -->
+      <stop offset="100%" stop-color="#fb923c" />  <!-- Orange -->
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="#060709" />
+
+  <!-- Hexagon Chassis -->
+  <polygon points="256,44 440,150 440,362 256,468 72,362 72,150" 
+           fill="url(#hex-carbon)" stroke="#2d323d" stroke-width="2" />
+
+  <!-- Clean Precision Coordinate Grid & Crosshairs -->
+  <g stroke="#262a34" stroke-width="1">
+    <!-- Inner nested hex -->
+    <polygon points="256,84 406,170 406,342 256,428 106,342 106,170" fill="none" stroke="#1d212a" stroke-dasharray="6 6" />
+    <!-- Center coordinate tick marks -->
+    <line x1="256" y1="44" x2="256" y2="70" stroke="#f43f5e" stroke-width="2" />
+    <line x1="256" y1="442" x2="256" y2="468" stroke="#fb923c" stroke-width="2" />
+    <line x1="72" y1="256" x2="98" y2="256" stroke="#a855f7" stroke-width="2" />
+    <line x1="414" y1="256" x2="440" y2="256" stroke="#f43f5e" stroke-width="2" />
+  </g>
+
+  <!-- Clean Line Work: The Bass Clef as Precision Vector Geometry -->
+  <g>
+    <!-- Vector guide arcs -->
+    <circle cx="265" cy="190" r="75" fill="none" stroke="#2a303d" stroke-width="1" stroke-dasharray="2 4" />
+
+    <!-- Head Node: Precision concentric rings -->
+    <circle cx="215" cy="185" r="26" fill="none" stroke="#262c38" stroke-width="1.5" />
+    <circle cx="215" cy="185" r="18" fill="#121418" stroke="#a855f7" stroke-width="3" />
+    <circle cx="215" cy="185" r="7" fill="#fb923c" />
+
+    <!-- Main Clef Stroke: Crisp triple gradient ribbon -->
+    <path d="M 215 185 
+             C 215 105, 340 105, 340 195 
+             C 340 270, 255 320, 190 375" 
+          fill="none" 
+          stroke="url(#sunset-flow)" 
+          stroke-width="14" 
+          stroke-linecap="round" />
+
+    <!-- Ghost highlight trace line on top edge -->
+    <path d="M 224 175 C 228 120, 328 120, 328 190 C 328 250, 255 300, 200 355" 
+          fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+
+    <!-- Minimal Dot 1: Target Gate -->
+    <g transform="translate(385, 168)">
+      <circle cx="0" cy="0" r="14" fill="#121418" stroke="#f43f5e" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="4" fill="#f43f5e" />
+      <text x="22" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#a855f7" opacity="0.8">P₁</text>
+    </g>
+
+    <!-- Minimal Dot 2: Action Gate -->
+    <g transform="translate(385, 230)">
+      <circle cx="0" cy="0" r="14" fill="#121418" stroke="#fb923c" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="4" fill="#fb923c" />
+      <text x="22" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#fb923c" opacity="0.8">P₂</text>
+    </g>
+    
+    <!-- Fine alignment connector -->
+    <line x1="385" y1="182" x2="385" y2="216" stroke="#2d3340" stroke-width="1.5" />
+  </g>
+
+  <!-- Technical Telemetry Footer -->
+  <text x="256" y="415" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="11" letter-spacing="4" fill="#717a8c">
+    <tspan fill="#a855f7">200MS</tspan> // <tspan fill="#f43f5e">SYSTEM 1</tspan> // <tspan fill="#fb923c">SUB-BASS</tspan>
+  </text>
+</svg>

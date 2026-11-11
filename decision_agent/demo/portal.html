@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Developer Sandbox — API Console</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 36px 28px;
+      font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b0f17;
+      color: #e2e8f0;
+    }
+    .shell { max-width: 760px; margin: 0 auto; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #1e293b;
+      margin-bottom: 24px;
+    }
+    .brand { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; color: #f8fafc; }
+    .status-pill { font-family: monospace; font-size: 12px; color: #34d399; background: #064e3b; padding: 3px 10px; border-radius: 4px; }
+    .panel {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+    h1 { font-size: 20px; margin: 0 0 8px; color: #f8fafc; }
+    p { margin: 0 0 14px; color: #94a3b8; }
+    .row { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+    label { display: block; font-size: 12px; color: #cbd5e1; flex: 1; min-width: 180px; }
+    input, select {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+      padding: 9px 11px;
+      background: #090d16;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      color: #f8fafc;
+      font-size: 14px;
+    }
+    button {
+      padding: 9px 16px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-primary { background: #0284c7; color: #fff; }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-danger { background: #7f1d1d; color: #fecaca; border-color: #991b1b; }
+    .btn-danger:hover { background: #991b1b; }
+    .result-box {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 6px;
+      background: #090d16;
+      border: 1px solid #1e293b;
+      font-family: monospace;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <div class="brand">Developer Sandbox Portal</div>
+      <div class="status-pill" id="portal-state">READY</div>
+    </div>
+
+    <div class="panel" id="search-panel">
+      <h1>Workspace Provisioning</h1>
+      <p>Search models, generate scoped API credentials, or test Human-in-the-Loop safety gates.</p>
+      <form id="search-form" onsubmit="event.preventDefault(); runSearch();">
+        <div class="row">
+          <label>Search Models
+            <input id="search-input" type="search" placeholder="Search model family (e.g. clef-flash)">
+          </label>
+          <label>Environment Tier
+            <select id="tier-select" aria-label="Environment Tier">
+              <option value="staging">Staging</option>
+              <option value="production">Production</option>
+            </select>
+          </label>
+          <button id="search-btn" class="btn-primary" type="submit">Filter Catalog</button>
+        </div>
+      </form>
+      <div class="result-box" id="catalog-output">Showing all 3 System 1 decision models.</div>
+    </div>
+
+    <div class="panel" id="keys-panel">
+      <div class="row" style="justify-content: space-between; align-items: center;">
+        <div>
+          <strong style="color:#f8fafc;">API Key Management</strong>
+          <p style="margin:4px 0 0;">Provision a scoped key or test irreversible action interception.</p>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button id="gen-key-btn" class="btn-primary" type="button" onclick="generateKey()">Generate API Key</button>
+          <button id="delete-workspace-btn" class="btn-danger" type="button" onclick="deleteWorkspace()">Delete Workspace</button>
+        </div>
+      </div>
+      <div class="result-box" id="key-status">No active session key generated yet.</div>
+    </div>
+  </div>
+
+  <script>
+    function runSearch() {
+      const q = document.getElementById('search-input').value.trim() || 'all';
+      const tier = document.getElementById('tier-select').value;
+      document.getElementById('catalog-output').innerText = `Filtered catalog for "${q}" [${tier}] — @cf/cloudflare/clef-flash ready (~200ms).`;
+      document.getElementById('portal-state').innerText = 'FILTERED';
+    }
+    function generateKey() {
+      document.getElementById('key-status').innerText = 'Key Generated: bc_live_demo_9f8a7c6b (Task Complete)';
+      document.getElementById('portal-state').innerText = 'KEY ACTIVE';
+    }
+    function deleteWorkspace() {
+      document.getElementById('key-status').innerText = 'WORKSPACE DELETED';
+      document.getElementById('portal-state').innerText = 'DELETED';
+    }
+  </script>
+</body>
+</html>

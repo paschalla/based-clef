@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Based Clef (`based-clef`) — System 1 Computer-Use Engine</title>
+  <meta name="description" content="Sub-second browser and desktop UI automation driven by Cloudflare Clef decision models, Intent-to-Playbook compilation, Web Studio, and Human-in-the-Loop safety gates.">
+  <style>
+    :root {
+      --bg: #090c12;
+      --surface: #10151f;
+      --elevated: #161d2b;
+      --border: #222d40;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --p1: #ff33cc;
+      --p2: #ff6b2b;
+      --cyan: #38bdf8;
+      --emerald: #34d399;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.6;
+      padding: 0 1.5rem 4rem;
+    }
+    nav {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .nav-brand {
+      font-family: var(--mono);
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.9rem; }
+    .nav-links a { color: var(--muted); text-decoration: none; }
+    .nav-links a:hover { color: var(--text); }
+    header.hero {
+      max-width: 1040px;
+      margin: 3.5rem auto 2.5rem;
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (max-width: 820px) {
+      header.hero { grid-template-columns: 1fr; }
+    }
+    .spec-line {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: 2.85rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.12;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+    p.lead {
+      font-size: 1.12rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 0.65rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+    }
+    .btn-primary {
+      background: #0284c7;
+      border-color: #0369a1;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #0369a1; }
+    .hero-emblem {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .hero-emblem img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .container { max-width: 1040px; margin: 0 auto; }
+    .terminal {
+      background: #06080d;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.4rem;
+      font-family: var(--mono);
+      font-size: 0.88rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      margin: 2rem 0 2.75rem;
+    }
+    .comment { color: #64748b; }
+    .cmd { color: var(--cyan); }
+    .arg { color: var(--emerald); }
+    .flag { color: var(--p2); }
+    h2 {
+      font-size: 1.45rem;
+      margin: 2.5rem 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.15rem;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.35rem;
+    }
+    .panel h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.45rem;
+      color: var(--text);
+    }
+    .panel p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    code {
+      font-family: var(--mono);
+      font-size: 0.86em;
+      color: var(--cyan);
+    }
+    footer {
+      max-width: 1040px;
+      margin: 4rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" id="nav-home" href="./index.html">// based-clef</a>
+    <div class="nav-links">
+      <a id="nav-quickstart" href="./based-clef.html">Quickstart Guide</a>
+      <a id="nav-github" href="https://github.com/paschalla/based-clef">GitHub Repository</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="spec-line">SYS.01 // SYSTEM 1 COMPUTER-USE ENGINE // ~200MS RETURN</div>
+      <h1>From user intent to verified UI actions in 200ms per step.</h1>
+      <p class="lead">
+        Based Clef compiles natural language goals and <code>-&gt;</code> pipelines into editable Action Sequence Blueprints,
+        then drives browsers and Linux desktops with calibrated Cloudflare Clef probability gates and zero-leak secret isolation.
+      </p>
+      <div class="cta-row">
+        <a id="cta-quickstart" class="btn btn-primary" href="./based-clef.html">Read 1-Page Quickstart</a>
+        <a id="cta-repo" class="btn" href="https://github.com/paschalla/based-clef">View on GitHub</a>
+      </div>
+    </div>
+    <div class="hero-emblem">
+      <img src="../assets/based-clef-vertical-blueprint.svg" alt="Based Clef architectural blueprint emblem">
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="terminal" aria-label="Command examples">
+      <div><span class="comment"># 1. Try immediately with zero API keys in Sandbox Offline mode</span></div>
+      <div>$ <span class="cmd">bclef</span> demo <span class="flag">--portal --offline --headless</span></div>
+      <div>$ <span class="cmd">bclef</span> studio <span class="flag">--offline --open</span></div>
+      <br>
+      <div><span class="comment"># 2. Compile natural intent or `-&gt;` shorthand into an inspectable Blueprint</span></div>
+      <div>$ <span class="cmd">bclef</span> plan <span class="arg">"Open wikipedia.org -&gt; search 'Alan Turing' -&gt; open article"</span></div>
+      <br>
+      <div><span class="comment"># 3. Execute live on Cloudflare Clef-Flash (~200ms) or expose via MCP</span></div>
+      <div>$ <span class="cmd">bclef</span> run <span class="arg">"Search wikipedia.org for 'Alan Turing' and open the article"</span> <span class="flag">--highlight</span></div>
+      <div>$ <span class="cmd">bclef</span> mcp</div>
+    </section>
+
+    <h2>Core Capabilities</h2>
+    <div class="grid">
+      <article class="panel">
+        <h3>Intent → Blueprint Compiler</h3>
+        <p>Auto-extracts target URLs and parameters from natural prompts or <code>-&gt;</code> shorthand, producing an editable stage sequence you can preview, step through, or export as a reusable <code>.playbook.json</code>.</p>
+      </article>
+      <article class="panel">
+        <h3>Based Clef Studio (Web UI)</h3>
+        <p>Built-in local command center (<code>bclef studio</code>) featuring a live annotated viewport, clickable DOM bounding boxes, real-time <code>P1</code>–<code>P4</code> probability bars, and inline stage editing.</p>
+      </article>
+      <article class="panel">
+        <h3>200ms System 1 Probability Gates</h3>
+        <p>Single forward pass via <code>@cf/cloudflare/clef-flash</code> evaluates target, action, completion, and sensitivity simultaneously — escalating to LLMs only when confidence drops below <code>0.70</code>.</p>
+      </article>
+      <article class="panel">
+        <h3>Zero-Leak Secret Isolation</h3>
+        <p>Passwords and tokens stay strictly in local RAM, never enter LLM or Clef prompts, mask as <code>***</code> in DOM snapshots, and persist to <code>0600</code> storage only after task completion.</p>
+      </article>
+      <article class="panel">
+        <h3>Browser + Linux Desktop Drivers</h3>
+        <p>Drives Chrome/Chromium via Playwright with <code>#ff33cc</code> target outlines and native X11 apps via AT-SPI accessibility inspection plus Tesseract OCR fallback.</p>
+      </article>
+      <article class="panel">
+        <h3>MCP Server &amp; Unix Socket IPC</h3>
+        <p>Plug directly into Claude Desktop, Cursor, or Antigravity via <code>bclef mcp</code>, or script background automation over <code>agent.sock</code> with <code>bclef ipc</code>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <span>Based Clef (<code>based-clef</code>) • Apache-2.0 Open Source</span>
+    <span>Powered by Cloudflare Workers AI Clef Decision Models</span>
+  </footer>
+</body>
+</html>

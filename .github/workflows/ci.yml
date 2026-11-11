@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package and optional dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[all]"
+          playwright install --with-deps chromium
+
+      - name: Run unit & headless browser integration tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify CLI doctor, blueprint compiler, and offline headless demo
+        run: |
+          bclef doctor --json
+          bclef plan "Open wikipedia.org -> search 'Alan Turing' -> open article" --json
+          bclef demo --offline --headless
+          bclef demo --portal --offline --headless

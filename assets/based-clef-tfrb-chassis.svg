@@ -1,0 +1,1185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <!-- Deep Obsidian Canvas Background -->
+    <radialGradient id="dark-core" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#141822" />
+      <stop offset="60%" stop-color="#0a0c10" />
+      <stop offset="100%" stop-color="#040507" />
+    </radialGradient>
+
+    <!-- Glowing Underlayer Gradient (Purple -> Pink -> Orange) -->
+    <linearGradient id="tfrb-sunset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+
+    <!-- Subtle glow filter -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="badge-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="600" height="600" fill="url(#dark-core)" />
+
+  <!-- 1. SUBTLE DISCO BISCUITS-STYLE HEXAGONAL/TRI-STAR UNDERLAYER -->
+  <g opacity="0.32" stroke="#252a38" stroke-width="1.2">
+    <!-- Geometric Kagome Star Grid (Isometric triangular hex lattice) -->
+<polygon points="-116.9,-112.5 -155.9,-90.0 -194.9,-112.5 -194.9,-157.5 -155.9,-180.0 -116.9,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-155.9" y1="-135.0" x2="-116.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="-135.0" x2="-155.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="-135.0" x2="-194.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="-135.0" x2="-194.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="-135.0" x2="-155.9" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="-135.0" x2="-116.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-39.0,-112.5 -77.9,-90.0 -116.9,-112.5 -116.9,-157.5 -77.9,-180.0 -39.0,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-77.9" y1="-135.0" x2="-39.0" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="-135.0" x2="-77.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="-135.0" x2="-116.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="-135.0" x2="-116.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="-135.0" x2="-77.9" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="-135.0" x2="-39.0" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="-77.9" cy="-135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="39.0,-112.5 0.0,-90.0 -39.0,-112.5 -39.0,-157.5 -0.0,-180.0 39.0,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="0.0" y1="-135.0" x2="39.0" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="-135.0" x2="0.0" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="-135.0" x2="-39.0" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="-135.0" x2="-39.0" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="-135.0" x2="-0.0" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="-135.0" x2="39.0" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="116.9,-112.5 77.9,-90.0 39.0,-112.5 39.0,-157.5 77.9,-180.0 116.9,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="77.9" y1="-135.0" x2="116.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="-135.0" x2="77.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="-135.0" x2="39.0" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="-135.0" x2="39.0" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="-135.0" x2="77.9" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="-135.0" x2="116.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="194.9,-112.5 155.9,-90.0 116.9,-112.5 116.9,-157.5 155.9,-180.0 194.9,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="155.9" y1="-135.0" x2="194.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="-135.0" x2="155.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="-135.0" x2="116.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="-135.0" x2="116.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="-135.0" x2="155.9" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="-135.0" x2="194.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="155.9" cy="-135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="272.8,-112.5 233.8,-90.0 194.9,-112.5 194.9,-157.5 233.8,-180.0 272.8,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="233.8" y1="-135.0" x2="272.8" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="-135.0" x2="233.8" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="-135.0" x2="194.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="-135.0" x2="194.9" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="-135.0" x2="233.8" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="-135.0" x2="272.8" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="350.7,-112.5 311.8,-90.0 272.8,-112.5 272.8,-157.5 311.8,-180.0 350.7,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="311.8" y1="-135.0" x2="350.7" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="-135.0" x2="311.8" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="-135.0" x2="272.8" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="-135.0" x2="272.8" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="-135.0" x2="311.8" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="-135.0" x2="350.7" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="428.7,-112.5 389.7,-90.0 350.7,-112.5 350.7,-157.5 389.7,-180.0 428.7,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="389.7" y1="-135.0" x2="428.7" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="-135.0" x2="389.7" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="-135.0" x2="350.7" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="-135.0" x2="350.7" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="-135.0" x2="389.7" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="-135.0" x2="428.7" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="389.7" cy="-135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="506.6,-112.5 467.7,-90.0 428.7,-112.5 428.7,-157.5 467.7,-180.0 506.6,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="467.7" y1="-135.0" x2="506.6" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="-135.0" x2="467.7" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="-135.0" x2="428.7" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="-135.0" x2="428.7" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="-135.0" x2="467.7" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="-135.0" x2="506.6" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="584.6,-112.5 545.6,-90.0 506.6,-112.5 506.6,-157.5 545.6,-180.0 584.6,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="545.6" y1="-135.0" x2="584.6" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="-135.0" x2="545.6" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="-135.0" x2="506.6" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="-135.0" x2="506.6" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="-135.0" x2="545.6" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="-135.0" x2="584.6" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="662.5,-112.5 623.5,-90.0 584.6,-112.5 584.6,-157.5 623.5,-180.0 662.5,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="623.5" y1="-135.0" x2="662.5" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="-135.0" x2="623.5" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="-135.0" x2="584.6" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="-135.0" x2="584.6" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="-135.0" x2="623.5" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="-135.0" x2="662.5" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="623.5" cy="-135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="740.5,-112.5 701.5,-90.0 662.5,-112.5 662.5,-157.5 701.5,-180.0 740.5,-157.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="701.5" y1="-135.0" x2="740.5" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="-135.0" x2="701.5" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="-135.0" x2="662.5" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="-135.0" x2="662.5" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="-135.0" x2="701.5" y2="-180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="-135.0" x2="740.5" y2="-157.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-77.9,-45.0 -116.9,-22.5 -155.9,-45.0 -155.9,-90.0 -116.9,-112.5 -77.9,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-116.9" y1="-67.5" x2="-77.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="-67.5" x2="-116.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="-67.5" x2="-155.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="-67.5" x2="-155.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="-67.5" x2="-116.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="-67.5" x2="-77.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="-116.9" cy="-67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="0.0,-45.0 -39.0,-22.5 -77.9,-45.0 -77.9,-90.0 -39.0,-112.5 0.0,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-39.0" y1="-67.5" x2="0.0" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="-67.5" x2="-39.0" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="-67.5" x2="-77.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="-67.5" x2="-77.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="-67.5" x2="-39.0" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="-67.5" x2="0.0" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="77.9,-45.0 39.0,-22.5 0.0,-45.0 -0.0,-90.0 39.0,-112.5 77.9,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="39.0" y1="-67.5" x2="77.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="-67.5" x2="39.0" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="-67.5" x2="0.0" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="-67.5" x2="-0.0" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="-67.5" x2="39.0" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="-67.5" x2="77.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="155.9,-45.0 116.9,-22.5 77.9,-45.0 77.9,-90.0 116.9,-112.5 155.9,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="116.9" y1="-67.5" x2="155.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="-67.5" x2="116.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="-67.5" x2="77.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="-67.5" x2="77.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="-67.5" x2="116.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="-67.5" x2="155.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="116.9" cy="-67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="233.8,-45.0 194.9,-22.5 155.9,-45.0 155.9,-90.0 194.9,-112.5 233.8,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="194.9" y1="-67.5" x2="233.8" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="-67.5" x2="194.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="-67.5" x2="155.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="-67.5" x2="155.9" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="-67.5" x2="194.9" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="-67.5" x2="233.8" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="311.8,-45.0 272.8,-22.5 233.8,-45.0 233.8,-90.0 272.8,-112.5 311.8,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="272.8" y1="-67.5" x2="311.8" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="-67.5" x2="272.8" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="-67.5" x2="233.8" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="-67.5" x2="233.8" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="-67.5" x2="272.8" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="-67.5" x2="311.8" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="389.7,-45.0 350.7,-22.5 311.8,-45.0 311.8,-90.0 350.7,-112.5 389.7,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="350.7" y1="-67.5" x2="389.7" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="-67.5" x2="350.7" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="-67.5" x2="311.8" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="-67.5" x2="311.8" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="-67.5" x2="350.7" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="-67.5" x2="389.7" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="350.7" cy="-67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="467.7,-45.0 428.7,-22.5 389.7,-45.0 389.7,-90.0 428.7,-112.5 467.7,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="428.7" y1="-67.5" x2="467.7" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="-67.5" x2="428.7" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="-67.5" x2="389.7" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="-67.5" x2="389.7" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="-67.5" x2="428.7" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="-67.5" x2="467.7" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="545.6,-45.0 506.6,-22.5 467.7,-45.0 467.7,-90.0 506.6,-112.5 545.6,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="506.6" y1="-67.5" x2="545.6" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="-67.5" x2="506.6" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="-67.5" x2="467.7" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="-67.5" x2="467.7" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="-67.5" x2="506.6" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="-67.5" x2="545.6" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="623.5,-45.0 584.6,-22.5 545.6,-45.0 545.6,-90.0 584.6,-112.5 623.5,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="584.6" y1="-67.5" x2="623.5" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="-67.5" x2="584.6" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="-67.5" x2="545.6" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="-67.5" x2="545.6" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="-67.5" x2="584.6" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="-67.5" x2="623.5" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="584.6" cy="-67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="701.5,-45.0 662.5,-22.5 623.5,-45.0 623.5,-90.0 662.5,-112.5 701.5,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="662.5" y1="-67.5" x2="701.5" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="-67.5" x2="662.5" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="-67.5" x2="623.5" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="-67.5" x2="623.5" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="-67.5" x2="662.5" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="-67.5" x2="701.5" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="779.4,-45.0 740.5,-22.5 701.5,-45.0 701.5,-90.0 740.5,-112.5 779.4,-90.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="740.5" y1="-67.5" x2="779.4" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="-67.5" x2="740.5" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="-67.5" x2="701.5" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="-67.5" x2="701.5" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="-67.5" x2="740.5" y2="-112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="-67.5" x2="779.4" y2="-90.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="-116.9,22.5 -155.9,45.0 -194.9,22.5 -194.9,-22.5 -155.9,-45.0 -116.9,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-155.9" y1="0.0" x2="-116.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="0.0" x2="-155.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="0.0" x2="-194.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="0.0" x2="-194.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="0.0" x2="-155.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="0.0" x2="-116.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-39.0,22.5 -77.9,45.0 -116.9,22.5 -116.9,-22.5 -77.9,-45.0 -39.0,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-77.9" y1="0.0" x2="-39.0" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="0.0" x2="-77.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="0.0" x2="-116.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="0.0" x2="-116.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="0.0" x2="-77.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="0.0" x2="-39.0" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="39.0,22.5 0.0,45.0 -39.0,22.5 -39.0,-22.5 -0.0,-45.0 39.0,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="0.0" y1="0.0" x2="39.0" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="0.0" x2="0.0" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="0.0" x2="-39.0" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="0.0" x2="-39.0" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="0.0" x2="-0.0" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="0.0" x2="39.0" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="0.0" cy="0.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="116.9,22.5 77.9,45.0 39.0,22.5 39.0,-22.5 77.9,-45.0 116.9,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="77.9" y1="0.0" x2="116.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="0.0" x2="77.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="0.0" x2="39.0" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="0.0" x2="39.0" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="0.0" x2="77.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="0.0" x2="116.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="194.9,22.5 155.9,45.0 116.9,22.5 116.9,-22.5 155.9,-45.0 194.9,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="155.9" y1="0.0" x2="194.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="0.0" x2="155.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="0.0" x2="116.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="0.0" x2="116.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="0.0" x2="155.9" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="0.0" x2="194.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="272.8,22.5 233.8,45.0 194.9,22.5 194.9,-22.5 233.8,-45.0 272.8,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="233.8" y1="0.0" x2="272.8" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="0.0" x2="233.8" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="0.0" x2="194.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="0.0" x2="194.9" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="0.0" x2="233.8" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="0.0" x2="272.8" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="233.8" cy="0.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="350.7,22.5 311.8,45.0 272.8,22.5 272.8,-22.5 311.8,-45.0 350.7,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="311.8" y1="0.0" x2="350.7" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="0.0" x2="311.8" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="0.0" x2="272.8" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="0.0" x2="272.8" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="0.0" x2="311.8" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="0.0" x2="350.7" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="428.7,22.5 389.7,45.0 350.7,22.5 350.7,-22.5 389.7,-45.0 428.7,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="389.7" y1="0.0" x2="428.7" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="0.0" x2="389.7" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="0.0" x2="350.7" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="0.0" x2="350.7" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="0.0" x2="389.7" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="0.0" x2="428.7" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="506.6,22.5 467.7,45.0 428.7,22.5 428.7,-22.5 467.7,-45.0 506.6,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="467.7" y1="0.0" x2="506.6" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="0.0" x2="467.7" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="0.0" x2="428.7" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="0.0" x2="428.7" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="0.0" x2="467.7" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="0.0" x2="506.6" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="467.7" cy="0.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="584.6,22.5 545.6,45.0 506.6,22.5 506.6,-22.5 545.6,-45.0 584.6,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="545.6" y1="0.0" x2="584.6" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="0.0" x2="545.6" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="0.0" x2="506.6" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="0.0" x2="506.6" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="0.0" x2="545.6" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="0.0" x2="584.6" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="662.5,22.5 623.5,45.0 584.6,22.5 584.6,-22.5 623.5,-45.0 662.5,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="623.5" y1="0.0" x2="662.5" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="0.0" x2="623.5" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="0.0" x2="584.6" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="0.0" x2="584.6" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="0.0" x2="623.5" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="0.0" x2="662.5" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="740.5,22.5 701.5,45.0 662.5,22.5 662.5,-22.5 701.5,-45.0 740.5,-22.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="701.5" y1="0.0" x2="740.5" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="0.0" x2="701.5" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="0.0" x2="662.5" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="0.0" x2="662.5" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="0.0" x2="701.5" y2="-45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="0.0" x2="740.5" y2="-22.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="701.5" cy="0.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="-77.9,90.0 -116.9,112.5 -155.9,90.0 -155.9,45.0 -116.9,22.5 -77.9,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-116.9" y1="67.5" x2="-77.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="67.5" x2="-116.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="67.5" x2="-155.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="67.5" x2="-155.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="67.5" x2="-116.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="67.5" x2="-77.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="0.0,90.0 -39.0,112.5 -77.9,90.0 -77.9,45.0 -39.0,22.5 0.0,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-39.0" y1="67.5" x2="0.0" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="67.5" x2="-39.0" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="67.5" x2="-77.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="67.5" x2="-77.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="67.5" x2="-39.0" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="67.5" x2="0.0" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="-39.0" cy="67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="77.9,90.0 39.0,112.5 0.0,90.0 -0.0,45.0 39.0,22.5 77.9,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="39.0" y1="67.5" x2="77.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="67.5" x2="39.0" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="67.5" x2="0.0" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="67.5" x2="-0.0" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="67.5" x2="39.0" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="67.5" x2="77.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="155.9,90.0 116.9,112.5 77.9,90.0 77.9,45.0 116.9,22.5 155.9,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="116.9" y1="67.5" x2="155.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="67.5" x2="116.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="67.5" x2="77.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="67.5" x2="77.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="67.5" x2="116.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="67.5" x2="155.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="233.8,90.0 194.9,112.5 155.9,90.0 155.9,45.0 194.9,22.5 233.8,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="194.9" y1="67.5" x2="233.8" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="67.5" x2="194.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="67.5" x2="155.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="67.5" x2="155.9" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="67.5" x2="194.9" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="67.5" x2="233.8" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="194.9" cy="67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="311.8,90.0 272.8,112.5 233.8,90.0 233.8,45.0 272.8,22.5 311.8,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="272.8" y1="67.5" x2="311.8" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="67.5" x2="272.8" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="67.5" x2="233.8" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="67.5" x2="233.8" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="67.5" x2="272.8" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="67.5" x2="311.8" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="389.7,90.0 350.7,112.5 311.8,90.0 311.8,45.0 350.7,22.5 389.7,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="350.7" y1="67.5" x2="389.7" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="67.5" x2="350.7" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="67.5" x2="311.8" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="67.5" x2="311.8" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="67.5" x2="350.7" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="67.5" x2="389.7" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="467.7,90.0 428.7,112.5 389.7,90.0 389.7,45.0 428.7,22.5 467.7,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="428.7" y1="67.5" x2="467.7" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="67.5" x2="428.7" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="67.5" x2="389.7" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="67.5" x2="389.7" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="67.5" x2="428.7" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="67.5" x2="467.7" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="428.7" cy="67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="545.6,90.0 506.6,112.5 467.7,90.0 467.7,45.0 506.6,22.5 545.6,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="506.6" y1="67.5" x2="545.6" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="67.5" x2="506.6" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="67.5" x2="467.7" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="67.5" x2="467.7" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="67.5" x2="506.6" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="67.5" x2="545.6" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="623.5,90.0 584.6,112.5 545.6,90.0 545.6,45.0 584.6,22.5 623.5,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="584.6" y1="67.5" x2="623.5" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="67.5" x2="584.6" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="67.5" x2="545.6" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="67.5" x2="545.6" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="67.5" x2="584.6" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="67.5" x2="623.5" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="701.5,90.0 662.5,112.5 623.5,90.0 623.5,45.0 662.5,22.5 701.5,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="662.5" y1="67.5" x2="701.5" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="67.5" x2="662.5" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="67.5" x2="623.5" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="67.5" x2="623.5" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="67.5" x2="662.5" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="67.5" x2="701.5" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="662.5" cy="67.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="779.4,90.0 740.5,112.5 701.5,90.0 701.5,45.0 740.5,22.5 779.4,45.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="740.5" y1="67.5" x2="779.4" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="67.5" x2="740.5" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="67.5" x2="701.5" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="67.5" x2="701.5" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="67.5" x2="740.5" y2="22.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="67.5" x2="779.4" y2="45.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="-116.9,157.5 -155.9,180.0 -194.9,157.5 -194.9,112.5 -155.9,90.0 -116.9,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-155.9" y1="135.0" x2="-116.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="135.0" x2="-155.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="135.0" x2="-194.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="135.0" x2="-194.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="135.0" x2="-155.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="135.0" x2="-116.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="-155.9" cy="135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="-39.0,157.5 -77.9,180.0 -116.9,157.5 -116.9,112.5 -77.9,90.0 -39.0,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-77.9" y1="135.0" x2="-39.0" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="135.0" x2="-77.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="135.0" x2="-116.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="135.0" x2="-116.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="135.0" x2="-77.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="135.0" x2="-39.0" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="39.0,157.5 0.0,180.0 -39.0,157.5 -39.0,112.5 -0.0,90.0 39.0,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="0.0" y1="135.0" x2="39.0" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="135.0" x2="0.0" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="135.0" x2="-39.0" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="135.0" x2="-39.0" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="135.0" x2="-0.0" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="135.0" x2="39.0" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="116.9,157.5 77.9,180.0 39.0,157.5 39.0,112.5 77.9,90.0 116.9,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="77.9" y1="135.0" x2="116.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="135.0" x2="77.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="135.0" x2="39.0" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="135.0" x2="39.0" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="135.0" x2="77.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="135.0" x2="116.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="77.9" cy="135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="194.9,157.5 155.9,180.0 116.9,157.5 116.9,112.5 155.9,90.0 194.9,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="155.9" y1="135.0" x2="194.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="135.0" x2="155.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="135.0" x2="116.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="135.0" x2="116.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="135.0" x2="155.9" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="135.0" x2="194.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="272.8,157.5 233.8,180.0 194.9,157.5 194.9,112.5 233.8,90.0 272.8,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="233.8" y1="135.0" x2="272.8" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="135.0" x2="233.8" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="135.0" x2="194.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="135.0" x2="194.9" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="135.0" x2="233.8" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="135.0" x2="272.8" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="350.7,157.5 311.8,180.0 272.8,157.5 272.8,112.5 311.8,90.0 350.7,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="311.8" y1="135.0" x2="350.7" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="135.0" x2="311.8" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="135.0" x2="272.8" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="135.0" x2="272.8" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="135.0" x2="311.8" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="135.0" x2="350.7" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="311.8" cy="135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="428.7,157.5 389.7,180.0 350.7,157.5 350.7,112.5 389.7,90.0 428.7,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="389.7" y1="135.0" x2="428.7" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="135.0" x2="389.7" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="135.0" x2="350.7" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="135.0" x2="350.7" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="135.0" x2="389.7" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="135.0" x2="428.7" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="506.6,157.5 467.7,180.0 428.7,157.5 428.7,112.5 467.7,90.0 506.6,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="467.7" y1="135.0" x2="506.6" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="135.0" x2="467.7" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="135.0" x2="428.7" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="135.0" x2="428.7" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="135.0" x2="467.7" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="135.0" x2="506.6" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="584.6,157.5 545.6,180.0 506.6,157.5 506.6,112.5 545.6,90.0 584.6,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="545.6" y1="135.0" x2="584.6" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="135.0" x2="545.6" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="135.0" x2="506.6" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="135.0" x2="506.6" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="135.0" x2="545.6" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="135.0" x2="584.6" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="545.6" cy="135.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="662.5,157.5 623.5,180.0 584.6,157.5 584.6,112.5 623.5,90.0 662.5,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="623.5" y1="135.0" x2="662.5" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="135.0" x2="623.5" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="135.0" x2="584.6" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="135.0" x2="584.6" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="135.0" x2="623.5" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="135.0" x2="662.5" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="740.5,157.5 701.5,180.0 662.5,157.5 662.5,112.5 701.5,90.0 740.5,112.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="701.5" y1="135.0" x2="740.5" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="135.0" x2="701.5" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="135.0" x2="662.5" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="135.0" x2="662.5" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="135.0" x2="701.5" y2="90.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="135.0" x2="740.5" y2="112.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-77.9,225.0 -116.9,247.5 -155.9,225.0 -155.9,180.0 -116.9,157.5 -77.9,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-116.9" y1="202.5" x2="-77.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="202.5" x2="-116.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="202.5" x2="-155.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="202.5" x2="-155.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="202.5" x2="-116.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="202.5" x2="-77.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="0.0,225.0 -39.0,247.5 -77.9,225.0 -77.9,180.0 -39.0,157.5 0.0,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-39.0" y1="202.5" x2="0.0" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="202.5" x2="-39.0" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="202.5" x2="-77.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="202.5" x2="-77.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="202.5" x2="-39.0" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="202.5" x2="0.0" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="77.9,225.0 39.0,247.5 0.0,225.0 -0.0,180.0 39.0,157.5 77.9,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="39.0" y1="202.5" x2="77.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="202.5" x2="39.0" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="202.5" x2="0.0" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="202.5" x2="-0.0" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="202.5" x2="39.0" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="202.5" x2="77.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="39.0" cy="202.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="155.9,225.0 116.9,247.5 77.9,225.0 77.9,180.0 116.9,157.5 155.9,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="116.9" y1="202.5" x2="155.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="202.5" x2="116.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="202.5" x2="77.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="202.5" x2="77.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="202.5" x2="116.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="202.5" x2="155.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="233.8,225.0 194.9,247.5 155.9,225.0 155.9,180.0 194.9,157.5 233.8,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="194.9" y1="202.5" x2="233.8" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="202.5" x2="194.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="202.5" x2="155.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="202.5" x2="155.9" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="202.5" x2="194.9" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="202.5" x2="233.8" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="311.8,225.0 272.8,247.5 233.8,225.0 233.8,180.0 272.8,157.5 311.8,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="272.8" y1="202.5" x2="311.8" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="202.5" x2="272.8" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="202.5" x2="233.8" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="202.5" x2="233.8" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="202.5" x2="272.8" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="202.5" x2="311.8" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="272.8" cy="202.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="389.7,225.0 350.7,247.5 311.8,225.0 311.8,180.0 350.7,157.5 389.7,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="350.7" y1="202.5" x2="389.7" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="202.5" x2="350.7" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="202.5" x2="311.8" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="202.5" x2="311.8" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="202.5" x2="350.7" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="202.5" x2="389.7" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="467.7,225.0 428.7,247.5 389.7,225.0 389.7,180.0 428.7,157.5 467.7,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="428.7" y1="202.5" x2="467.7" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="202.5" x2="428.7" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="202.5" x2="389.7" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="202.5" x2="389.7" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="202.5" x2="428.7" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="202.5" x2="467.7" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="545.6,225.0 506.6,247.5 467.7,225.0 467.7,180.0 506.6,157.5 545.6,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="506.6" y1="202.5" x2="545.6" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="202.5" x2="506.6" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="202.5" x2="467.7" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="202.5" x2="467.7" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="202.5" x2="506.6" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="202.5" x2="545.6" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="506.6" cy="202.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="623.5,225.0 584.6,247.5 545.6,225.0 545.6,180.0 584.6,157.5 623.5,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="584.6" y1="202.5" x2="623.5" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="202.5" x2="584.6" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="202.5" x2="545.6" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="202.5" x2="545.6" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="202.5" x2="584.6" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="202.5" x2="623.5" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="701.5,225.0 662.5,247.5 623.5,225.0 623.5,180.0 662.5,157.5 701.5,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="662.5" y1="202.5" x2="701.5" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="202.5" x2="662.5" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="202.5" x2="623.5" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="202.5" x2="623.5" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="202.5" x2="662.5" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="202.5" x2="701.5" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="779.4,225.0 740.5,247.5 701.5,225.0 701.5,180.0 740.5,157.5 779.4,180.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="740.5" y1="202.5" x2="779.4" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="202.5" x2="740.5" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="202.5" x2="701.5" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="202.5" x2="701.5" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="202.5" x2="740.5" y2="157.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="202.5" x2="779.4" y2="180.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="740.5" cy="202.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="-116.9,292.5 -155.9,315.0 -194.9,292.5 -194.9,247.5 -155.9,225.0 -116.9,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-155.9" y1="270.0" x2="-116.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="270.0" x2="-155.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="270.0" x2="-194.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="270.0" x2="-194.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="270.0" x2="-155.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="270.0" x2="-116.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-39.0,292.5 -77.9,315.0 -116.9,292.5 -116.9,247.5 -77.9,225.0 -39.0,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-77.9" y1="270.0" x2="-39.0" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="270.0" x2="-77.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="270.0" x2="-116.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="270.0" x2="-116.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="270.0" x2="-77.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="270.0" x2="-39.0" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="-77.9" cy="270.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="39.0,292.5 0.0,315.0 -39.0,292.5 -39.0,247.5 -0.0,225.0 39.0,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="0.0" y1="270.0" x2="39.0" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="270.0" x2="0.0" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="270.0" x2="-39.0" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="270.0" x2="-39.0" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="270.0" x2="-0.0" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="270.0" x2="39.0" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="116.9,292.5 77.9,315.0 39.0,292.5 39.0,247.5 77.9,225.0 116.9,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="77.9" y1="270.0" x2="116.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="270.0" x2="77.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="270.0" x2="39.0" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="270.0" x2="39.0" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="270.0" x2="77.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="270.0" x2="116.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="194.9,292.5 155.9,315.0 116.9,292.5 116.9,247.5 155.9,225.0 194.9,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="155.9" y1="270.0" x2="194.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="270.0" x2="155.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="270.0" x2="116.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="270.0" x2="116.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="270.0" x2="155.9" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="270.0" x2="194.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="155.9" cy="270.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="272.8,292.5 233.8,315.0 194.9,292.5 194.9,247.5 233.8,225.0 272.8,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="233.8" y1="270.0" x2="272.8" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="270.0" x2="233.8" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="270.0" x2="194.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="270.0" x2="194.9" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="270.0" x2="233.8" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="270.0" x2="272.8" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="350.7,292.5 311.8,315.0 272.8,292.5 272.8,247.5 311.8,225.0 350.7,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="311.8" y1="270.0" x2="350.7" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="270.0" x2="311.8" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="270.0" x2="272.8" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="270.0" x2="272.8" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="270.0" x2="311.8" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="270.0" x2="350.7" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="428.7,292.5 389.7,315.0 350.7,292.5 350.7,247.5 389.7,225.0 428.7,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="389.7" y1="270.0" x2="428.7" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="270.0" x2="389.7" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="270.0" x2="350.7" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="270.0" x2="350.7" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="270.0" x2="389.7" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="270.0" x2="428.7" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="389.7" cy="270.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="506.6,292.5 467.7,315.0 428.7,292.5 428.7,247.5 467.7,225.0 506.6,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="467.7" y1="270.0" x2="506.6" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="270.0" x2="467.7" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="270.0" x2="428.7" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="270.0" x2="428.7" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="270.0" x2="467.7" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="270.0" x2="506.6" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="584.6,292.5 545.6,315.0 506.6,292.5 506.6,247.5 545.6,225.0 584.6,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="545.6" y1="270.0" x2="584.6" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="270.0" x2="545.6" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="270.0" x2="506.6" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="270.0" x2="506.6" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="270.0" x2="545.6" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="270.0" x2="584.6" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="662.5,292.5 623.5,315.0 584.6,292.5 584.6,247.5 623.5,225.0 662.5,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="623.5" y1="270.0" x2="662.5" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="270.0" x2="623.5" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="270.0" x2="584.6" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="270.0" x2="584.6" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="270.0" x2="623.5" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="270.0" x2="662.5" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="623.5" cy="270.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="740.5,292.5 701.5,315.0 662.5,292.5 662.5,247.5 701.5,225.0 740.5,247.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="701.5" y1="270.0" x2="740.5" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="270.0" x2="701.5" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="270.0" x2="662.5" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="270.0" x2="662.5" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="270.0" x2="701.5" y2="225.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="270.0" x2="740.5" y2="247.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-77.9,360.0 -116.9,382.5 -155.9,360.0 -155.9,315.0 -116.9,292.5 -77.9,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-116.9" y1="337.5" x2="-77.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="337.5" x2="-116.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="337.5" x2="-155.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="337.5" x2="-155.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="337.5" x2="-116.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="337.5" x2="-77.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="-116.9" cy="337.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="0.0,360.0 -39.0,382.5 -77.9,360.0 -77.9,315.0 -39.0,292.5 0.0,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-39.0" y1="337.5" x2="0.0" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="337.5" x2="-39.0" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="337.5" x2="-77.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="337.5" x2="-77.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="337.5" x2="-39.0" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="337.5" x2="0.0" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="77.9,360.0 39.0,382.5 0.0,360.0 -0.0,315.0 39.0,292.5 77.9,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="39.0" y1="337.5" x2="77.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="337.5" x2="39.0" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="337.5" x2="0.0" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="337.5" x2="-0.0" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="337.5" x2="39.0" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="337.5" x2="77.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="155.9,360.0 116.9,382.5 77.9,360.0 77.9,315.0 116.9,292.5 155.9,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="116.9" y1="337.5" x2="155.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="337.5" x2="116.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="337.5" x2="77.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="337.5" x2="77.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="337.5" x2="116.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="337.5" x2="155.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="116.9" cy="337.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="233.8,360.0 194.9,382.5 155.9,360.0 155.9,315.0 194.9,292.5 233.8,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="194.9" y1="337.5" x2="233.8" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="337.5" x2="194.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="337.5" x2="155.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="337.5" x2="155.9" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="337.5" x2="194.9" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="337.5" x2="233.8" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="311.8,360.0 272.8,382.5 233.8,360.0 233.8,315.0 272.8,292.5 311.8,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="272.8" y1="337.5" x2="311.8" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="337.5" x2="272.8" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="337.5" x2="233.8" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="337.5" x2="233.8" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="337.5" x2="272.8" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="337.5" x2="311.8" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="389.7,360.0 350.7,382.5 311.8,360.0 311.8,315.0 350.7,292.5 389.7,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="350.7" y1="337.5" x2="389.7" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="337.5" x2="350.7" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="337.5" x2="311.8" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="337.5" x2="311.8" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="337.5" x2="350.7" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="337.5" x2="389.7" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="350.7" cy="337.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="467.7,360.0 428.7,382.5 389.7,360.0 389.7,315.0 428.7,292.5 467.7,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="428.7" y1="337.5" x2="467.7" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="337.5" x2="428.7" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="337.5" x2="389.7" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="337.5" x2="389.7" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="337.5" x2="428.7" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="337.5" x2="467.7" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="545.6,360.0 506.6,382.5 467.7,360.0 467.7,315.0 506.6,292.5 545.6,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="506.6" y1="337.5" x2="545.6" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="337.5" x2="506.6" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="337.5" x2="467.7" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="337.5" x2="467.7" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="337.5" x2="506.6" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="337.5" x2="545.6" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="623.5,360.0 584.6,382.5 545.6,360.0 545.6,315.0 584.6,292.5 623.5,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="584.6" y1="337.5" x2="623.5" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="337.5" x2="584.6" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="337.5" x2="545.6" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="337.5" x2="545.6" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="337.5" x2="584.6" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="337.5" x2="623.5" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="584.6" cy="337.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="701.5,360.0 662.5,382.5 623.5,360.0 623.5,315.0 662.5,292.5 701.5,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="662.5" y1="337.5" x2="701.5" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="337.5" x2="662.5" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="337.5" x2="623.5" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="337.5" x2="623.5" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="337.5" x2="662.5" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="337.5" x2="701.5" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="779.4,360.0 740.5,382.5 701.5,360.0 701.5,315.0 740.5,292.5 779.4,315.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="740.5" y1="337.5" x2="779.4" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="337.5" x2="740.5" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="337.5" x2="701.5" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="337.5" x2="701.5" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="337.5" x2="740.5" y2="292.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="337.5" x2="779.4" y2="315.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="-116.9,427.5 -155.9,450.0 -194.9,427.5 -194.9,382.5 -155.9,360.0 -116.9,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-155.9" y1="405.0" x2="-116.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="405.0" x2="-155.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="405.0" x2="-194.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="405.0" x2="-194.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="405.0" x2="-155.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="405.0" x2="-116.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-39.0,427.5 -77.9,450.0 -116.9,427.5 -116.9,382.5 -77.9,360.0 -39.0,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-77.9" y1="405.0" x2="-39.0" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="405.0" x2="-77.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="405.0" x2="-116.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="405.0" x2="-116.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="405.0" x2="-77.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="405.0" x2="-39.0" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="39.0,427.5 0.0,450.0 -39.0,427.5 -39.0,382.5 -0.0,360.0 39.0,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="0.0" y1="405.0" x2="39.0" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="405.0" x2="0.0" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="405.0" x2="-39.0" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="405.0" x2="-39.0" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="405.0" x2="-0.0" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="405.0" x2="39.0" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="0.0" cy="405.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="116.9,427.5 77.9,450.0 39.0,427.5 39.0,382.5 77.9,360.0 116.9,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="77.9" y1="405.0" x2="116.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="405.0" x2="77.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="405.0" x2="39.0" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="405.0" x2="39.0" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="405.0" x2="77.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="405.0" x2="116.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="194.9,427.5 155.9,450.0 116.9,427.5 116.9,382.5 155.9,360.0 194.9,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="155.9" y1="405.0" x2="194.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="405.0" x2="155.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="405.0" x2="116.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="405.0" x2="116.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="405.0" x2="155.9" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="405.0" x2="194.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="272.8,427.5 233.8,450.0 194.9,427.5 194.9,382.5 233.8,360.0 272.8,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="233.8" y1="405.0" x2="272.8" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="405.0" x2="233.8" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="405.0" x2="194.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="405.0" x2="194.9" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="405.0" x2="233.8" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="405.0" x2="272.8" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="233.8" cy="405.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="350.7,427.5 311.8,450.0 272.8,427.5 272.8,382.5 311.8,360.0 350.7,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="311.8" y1="405.0" x2="350.7" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="405.0" x2="311.8" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="405.0" x2="272.8" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="405.0" x2="272.8" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="405.0" x2="311.8" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="405.0" x2="350.7" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="428.7,427.5 389.7,450.0 350.7,427.5 350.7,382.5 389.7,360.0 428.7,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="389.7" y1="405.0" x2="428.7" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="405.0" x2="389.7" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="405.0" x2="350.7" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="405.0" x2="350.7" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="405.0" x2="389.7" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="405.0" x2="428.7" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="506.6,427.5 467.7,450.0 428.7,427.5 428.7,382.5 467.7,360.0 506.6,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="467.7" y1="405.0" x2="506.6" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="405.0" x2="467.7" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="405.0" x2="428.7" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="405.0" x2="428.7" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="405.0" x2="467.7" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="405.0" x2="506.6" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="467.7" cy="405.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="584.6,427.5 545.6,450.0 506.6,427.5 506.6,382.5 545.6,360.0 584.6,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="545.6" y1="405.0" x2="584.6" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="405.0" x2="545.6" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="405.0" x2="506.6" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="405.0" x2="506.6" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="405.0" x2="545.6" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="405.0" x2="584.6" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="662.5,427.5 623.5,450.0 584.6,427.5 584.6,382.5 623.5,360.0 662.5,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="623.5" y1="405.0" x2="662.5" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="405.0" x2="623.5" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="405.0" x2="584.6" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="405.0" x2="584.6" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="405.0" x2="623.5" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="405.0" x2="662.5" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="740.5,427.5 701.5,450.0 662.5,427.5 662.5,382.5 701.5,360.0 740.5,382.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="701.5" y1="405.0" x2="740.5" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="405.0" x2="701.5" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="405.0" x2="662.5" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="405.0" x2="662.5" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="405.0" x2="701.5" y2="360.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="405.0" x2="740.5" y2="382.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="701.5" cy="405.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="-77.9,495.0 -116.9,517.5 -155.9,495.0 -155.9,450.0 -116.9,427.5 -77.9,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-116.9" y1="472.5" x2="-77.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="472.5" x2="-116.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="472.5" x2="-155.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="472.5" x2="-155.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="472.5" x2="-116.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="472.5" x2="-77.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="0.0,495.0 -39.0,517.5 -77.9,495.0 -77.9,450.0 -39.0,427.5 0.0,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-39.0" y1="472.5" x2="0.0" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="472.5" x2="-39.0" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="472.5" x2="-77.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="472.5" x2="-77.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="472.5" x2="-39.0" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="472.5" x2="0.0" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="-39.0" cy="472.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="77.9,495.0 39.0,517.5 0.0,495.0 -0.0,450.0 39.0,427.5 77.9,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="39.0" y1="472.5" x2="77.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="472.5" x2="39.0" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="472.5" x2="0.0" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="472.5" x2="-0.0" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="472.5" x2="39.0" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="472.5" x2="77.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="155.9,495.0 116.9,517.5 77.9,495.0 77.9,450.0 116.9,427.5 155.9,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="116.9" y1="472.5" x2="155.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="472.5" x2="116.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="472.5" x2="77.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="472.5" x2="77.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="472.5" x2="116.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="472.5" x2="155.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="233.8,495.0 194.9,517.5 155.9,495.0 155.9,450.0 194.9,427.5 233.8,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="194.9" y1="472.5" x2="233.8" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="472.5" x2="194.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="472.5" x2="155.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="472.5" x2="155.9" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="472.5" x2="194.9" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="472.5" x2="233.8" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="194.9" cy="472.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="311.8,495.0 272.8,517.5 233.8,495.0 233.8,450.0 272.8,427.5 311.8,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="272.8" y1="472.5" x2="311.8" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="472.5" x2="272.8" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="472.5" x2="233.8" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="472.5" x2="233.8" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="472.5" x2="272.8" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="472.5" x2="311.8" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="389.7,495.0 350.7,517.5 311.8,495.0 311.8,450.0 350.7,427.5 389.7,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="350.7" y1="472.5" x2="389.7" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="472.5" x2="350.7" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="472.5" x2="311.8" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="472.5" x2="311.8" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="472.5" x2="350.7" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="472.5" x2="389.7" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="467.7,495.0 428.7,517.5 389.7,495.0 389.7,450.0 428.7,427.5 467.7,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="428.7" y1="472.5" x2="467.7" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="472.5" x2="428.7" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="472.5" x2="389.7" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="472.5" x2="389.7" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="472.5" x2="428.7" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="472.5" x2="467.7" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="428.7" cy="472.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="545.6,495.0 506.6,517.5 467.7,495.0 467.7,450.0 506.6,427.5 545.6,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="506.6" y1="472.5" x2="545.6" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="472.5" x2="506.6" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="472.5" x2="467.7" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="472.5" x2="467.7" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="472.5" x2="506.6" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="472.5" x2="545.6" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="623.5,495.0 584.6,517.5 545.6,495.0 545.6,450.0 584.6,427.5 623.5,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="584.6" y1="472.5" x2="623.5" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="472.5" x2="584.6" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="472.5" x2="545.6" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="472.5" x2="545.6" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="472.5" x2="584.6" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="472.5" x2="623.5" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="701.5,495.0 662.5,517.5 623.5,495.0 623.5,450.0 662.5,427.5 701.5,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="662.5" y1="472.5" x2="701.5" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="472.5" x2="662.5" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="472.5" x2="623.5" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="472.5" x2="623.5" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="472.5" x2="662.5" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="472.5" x2="701.5" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="662.5" cy="472.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="779.4,495.0 740.5,517.5 701.5,495.0 701.5,450.0 740.5,427.5 779.4,450.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="740.5" y1="472.5" x2="779.4" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="472.5" x2="740.5" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="472.5" x2="701.5" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="472.5" x2="701.5" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="472.5" x2="740.5" y2="427.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="472.5" x2="779.4" y2="450.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="-116.9,562.5 -155.9,585.0 -194.9,562.5 -194.9,517.5 -155.9,495.0 -116.9,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-155.9" y1="540.0" x2="-116.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="540.0" x2="-155.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="540.0" x2="-194.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="540.0" x2="-194.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="540.0" x2="-155.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-155.9" y1="540.0" x2="-116.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="-155.9" cy="540.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="-39.0,562.5 -77.9,585.0 -116.9,562.5 -116.9,517.5 -77.9,495.0 -39.0,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-77.9" y1="540.0" x2="-39.0" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="540.0" x2="-77.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="540.0" x2="-116.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="540.0" x2="-116.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="540.0" x2="-77.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-77.9" y1="540.0" x2="-39.0" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="39.0,562.5 0.0,585.0 -39.0,562.5 -39.0,517.5 -0.0,495.0 39.0,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="0.0" y1="540.0" x2="39.0" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="540.0" x2="0.0" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="540.0" x2="-39.0" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="540.0" x2="-39.0" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="540.0" x2="-0.0" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="0.0" y1="540.0" x2="39.0" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="116.9,562.5 77.9,585.0 39.0,562.5 39.0,517.5 77.9,495.0 116.9,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="77.9" y1="540.0" x2="116.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="540.0" x2="77.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="540.0" x2="39.0" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="540.0" x2="39.0" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="540.0" x2="77.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="77.9" y1="540.0" x2="116.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="77.9" cy="540.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="194.9,562.5 155.9,585.0 116.9,562.5 116.9,517.5 155.9,495.0 194.9,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="155.9" y1="540.0" x2="194.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="540.0" x2="155.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="540.0" x2="116.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="540.0" x2="116.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="540.0" x2="155.9" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="155.9" y1="540.0" x2="194.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="272.8,562.5 233.8,585.0 194.9,562.5 194.9,517.5 233.8,495.0 272.8,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="233.8" y1="540.0" x2="272.8" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="540.0" x2="233.8" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="540.0" x2="194.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="540.0" x2="194.9" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="540.0" x2="233.8" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="233.8" y1="540.0" x2="272.8" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="350.7,562.5 311.8,585.0 272.8,562.5 272.8,517.5 311.8,495.0 350.7,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="311.8" y1="540.0" x2="350.7" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="540.0" x2="311.8" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="540.0" x2="272.8" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="540.0" x2="272.8" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="540.0" x2="311.8" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="311.8" y1="540.0" x2="350.7" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="311.8" cy="540.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="428.7,562.5 389.7,585.0 350.7,562.5 350.7,517.5 389.7,495.0 428.7,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="389.7" y1="540.0" x2="428.7" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="540.0" x2="389.7" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="540.0" x2="350.7" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="540.0" x2="350.7" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="540.0" x2="389.7" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="389.7" y1="540.0" x2="428.7" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="506.6,562.5 467.7,585.0 428.7,562.5 428.7,517.5 467.7,495.0 506.6,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="467.7" y1="540.0" x2="506.6" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="540.0" x2="467.7" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="540.0" x2="428.7" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="540.0" x2="428.7" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="540.0" x2="467.7" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="467.7" y1="540.0" x2="506.6" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="584.6,562.5 545.6,585.0 506.6,562.5 506.6,517.5 545.6,495.0 584.6,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="545.6" y1="540.0" x2="584.6" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="540.0" x2="545.6" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="540.0" x2="506.6" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="540.0" x2="506.6" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="540.0" x2="545.6" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="545.6" y1="540.0" x2="584.6" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <circle cx="545.6" cy="540.0" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="662.5,562.5 623.5,585.0 584.6,562.5 584.6,517.5 623.5,495.0 662.5,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="623.5" y1="540.0" x2="662.5" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="540.0" x2="623.5" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="540.0" x2="584.6" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="540.0" x2="584.6" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="540.0" x2="623.5" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="623.5" y1="540.0" x2="662.5" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="740.5,562.5 701.5,585.0 662.5,562.5 662.5,517.5 701.5,495.0 740.5,517.5" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="701.5" y1="540.0" x2="740.5" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="540.0" x2="701.5" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="540.0" x2="662.5" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="540.0" x2="662.5" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="540.0" x2="701.5" y2="495.0" stroke="#181c26" stroke-width="1" />
+    <line x1="701.5" y1="540.0" x2="740.5" y2="517.5" stroke="#181c26" stroke-width="1" />
+    <polygon points="-77.9,630.0 -116.9,652.5 -155.9,630.0 -155.9,585.0 -116.9,562.5 -77.9,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-116.9" y1="607.5" x2="-77.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="607.5" x2="-116.9" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="607.5" x2="-155.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="607.5" x2="-155.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="607.5" x2="-116.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-116.9" y1="607.5" x2="-77.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="0.0,630.0 -39.0,652.5 -77.9,630.0 -77.9,585.0 -39.0,562.5 0.0,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="-39.0" y1="607.5" x2="0.0" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="607.5" x2="-39.0" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="607.5" x2="-77.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="607.5" x2="-77.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="607.5" x2="-39.0" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="-39.0" y1="607.5" x2="0.0" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="77.9,630.0 39.0,652.5 0.0,630.0 -0.0,585.0 39.0,562.5 77.9,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="39.0" y1="607.5" x2="77.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="607.5" x2="39.0" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="607.5" x2="0.0" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="607.5" x2="-0.0" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="607.5" x2="39.0" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="39.0" y1="607.5" x2="77.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="39.0" cy="607.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="155.9,630.0 116.9,652.5 77.9,630.0 77.9,585.0 116.9,562.5 155.9,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="116.9" y1="607.5" x2="155.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="607.5" x2="116.9" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="607.5" x2="77.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="607.5" x2="77.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="607.5" x2="116.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="116.9" y1="607.5" x2="155.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="233.8,630.0 194.9,652.5 155.9,630.0 155.9,585.0 194.9,562.5 233.8,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="194.9" y1="607.5" x2="233.8" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="607.5" x2="194.9" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="607.5" x2="155.9" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="607.5" x2="155.9" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="607.5" x2="194.9" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="194.9" y1="607.5" x2="233.8" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="311.8,630.0 272.8,652.5 233.8,630.0 233.8,585.0 272.8,562.5 311.8,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="272.8" y1="607.5" x2="311.8" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="607.5" x2="272.8" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="607.5" x2="233.8" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="607.5" x2="233.8" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="607.5" x2="272.8" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="272.8" y1="607.5" x2="311.8" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="272.8" cy="607.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="389.7,630.0 350.7,652.5 311.8,630.0 311.8,585.0 350.7,562.5 389.7,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="350.7" y1="607.5" x2="389.7" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="607.5" x2="350.7" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="607.5" x2="311.8" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="607.5" x2="311.8" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="607.5" x2="350.7" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="350.7" y1="607.5" x2="389.7" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="467.7,630.0 428.7,652.5 389.7,630.0 389.7,585.0 428.7,562.5 467.7,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="428.7" y1="607.5" x2="467.7" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="607.5" x2="428.7" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="607.5" x2="389.7" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="607.5" x2="389.7" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="607.5" x2="428.7" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="428.7" y1="607.5" x2="467.7" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="545.6,630.0 506.6,652.5 467.7,630.0 467.7,585.0 506.6,562.5 545.6,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="506.6" y1="607.5" x2="545.6" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="607.5" x2="506.6" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="607.5" x2="467.7" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="607.5" x2="467.7" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="607.5" x2="506.6" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="506.6" y1="607.5" x2="545.6" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="506.6" cy="607.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+    <polygon points="623.5,630.0 584.6,652.5 545.6,630.0 545.6,585.0 584.6,562.5 623.5,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="584.6" y1="607.5" x2="623.5" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="607.5" x2="584.6" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="607.5" x2="545.6" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="607.5" x2="545.6" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="607.5" x2="584.6" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="584.6" y1="607.5" x2="623.5" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="701.5,630.0 662.5,652.5 623.5,630.0 623.5,585.0 662.5,562.5 701.5,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="662.5" y1="607.5" x2="701.5" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="607.5" x2="662.5" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="607.5" x2="623.5" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="607.5" x2="623.5" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="607.5" x2="662.5" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="662.5" y1="607.5" x2="701.5" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <polygon points="779.4,630.0 740.5,652.5 701.5,630.0 701.5,585.0 740.5,562.5 779.4,585.0" fill="#0e1017" stroke="#1c202b" stroke-width="1" />
+    <line x1="740.5" y1="607.5" x2="779.4" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="607.5" x2="740.5" y2="652.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="607.5" x2="701.5" y2="630.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="607.5" x2="701.5" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="607.5" x2="740.5" y2="562.5" stroke="#181c26" stroke-width="1" />
+    <line x1="740.5" y1="607.5" x2="779.4" y2="585.0" stroke="#181c26" stroke-width="1" />
+    <circle cx="740.5" cy="607.5" r="3" fill="url(#tfrb-sunset)" opacity="0.5" />
+  </g>
+
+  <!-- Ambient Radial Vignette over grid to make edges fade softly -->
+  <radialGradient id="grid-fade" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#040507" stop-opacity="0" />
+    <stop offset="65%" stop-color="#040507" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#040507" stop-opacity="0.95" />
+  </radialGradient>
+  <rect width="600" height="600" fill="url(#grid-fade)" />
+
+  <!-- 2. CENTRAL INDUSTRIAL CHASSIS BADGE -->
+  <g filter="url(#badge-shadow)">
+    <!-- Top & Bottom Frame Bars ("====") -->
+    <rect x="180" y="90" width="240" height="8" rx="4" fill="url(#tfrb-sunset)" opacity="0.8" />
+    <rect x="195" y="104" width="210" height="3" rx="1.5" fill="#3b4254" />
+
+    <!-- Main Faceted Beveled Hexagon Badge: // based \ / \ clef // -->
+    <!-- Outer chamfered plate -->
+    <polygon points="300,120 460,205 460,375 300,460 140,375 140,205" 
+             fill="#11131a" stroke="#2a3040" stroke-width="2.5" />
+
+    <!-- Inner Carbon Bevel Surface -->
+    <polygon points="300,132 446,211 446,369 300,448 154,369 154,211" 
+             fill="#161922" stroke="url(#tfrb-sunset)" stroke-width="1.8" stroke-opacity="0.6" />
+
+    <!-- Subtle Technical Tick Marks at the 6 Vertices -->
+    <line x1="300" y1="120" x2="300" y2="138" stroke="#f97316" stroke-width="2" />
+    <line x1="300" y1="460" x2="300" y2="442" stroke="#7c3aed" stroke-width="2" />
+    <line x1="140" y1="205" x2="156" y2="213" stroke="#ec4899" stroke-width="2" />
+    <line x1="460" y1="205" x2="444" y2="213" stroke="#f97316" stroke-width="2" />
+    <line x1="140" y1="375" x2="156" y2="367" stroke="#7c3aed" stroke-width="2" />
+    <line x1="460" y1="375" x2="444" y2="367" stroke="#ec4899" stroke-width="2" />
+
+    <!-- Hex bolt hardware accents at top/bottom corners -->
+    <circle cx="210" cy="158" r="4" fill="#0d0e13" stroke="#3b4254" stroke-width="1.5" />
+    <circle cx="390" cy="158" r="4" fill="#0d0e13" stroke="#3b4254" stroke-width="1.5" />
+    <circle cx="210" cy="422" r="4" fill="#0d0e13" stroke="#3b4254" stroke-width="1.5" />
+    <circle cx="390" cy="422" r="4" fill="#0d0e13" stroke="#3b4254" stroke-width="1.5" />
+
+    <!-- THE BASS CLEF (𝄢) + TYPOGRAPHIC BADGE EMBEDDED -->
+    <g filter="url(#neon-glow)">
+      <!-- The Bass Clef fluid neon curve integrated inside the chassis -->
+      <circle cx="270" cy="225" r="18" fill="#11131a" stroke="url(#tfrb-sunset)" stroke-width="5" />
+      <circle cx="270" cy="225" r="6" fill="#f97316" />
+
+      <path d="M 270 225 
+               C 270 165, 365 165, 365 235 
+               C 365 300, 305 345, 250 385" 
+            fill="none" 
+            stroke="url(#tfrb-sunset)" 
+            stroke-width="14" 
+            stroke-linecap="round" />
+
+      <!-- Probability Gates (The 2 Clef Dots) with P1/P2 indicators -->
+      <circle cx="405" cy="210" r="10" fill="#11131a" stroke="#ec4899" stroke-width="3.5" />
+      <circle cx="405" cy="210" r="3.5" fill="#ffffff" />
+
+      <circle cx="405" cy="260" r="10" fill="#11131a" stroke="#f97316" stroke-width="3.5" />
+      <circle cx="405" cy="260" r="3.5" fill="#ffffff" />
+    </g>
+
+    <!-- THE ASCII BRANDING PLATE TEXT: // based \ / \ clef // -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-weight="800" text-anchor="middle">
+      <!-- // BASED \ -->
+      <text x="300" y="325" font-size="28" letter-spacing="6" fill="#ffffff">
+        <tspan fill="#ec4899" font-weight="900">// </tspan>BASED<tspan fill="#ec4899" font-weight="900"> \</tspan>
+      </text>
+
+      <!-- \ CLEF // -->
+      <text x="300" y="358" font-size="24" letter-spacing="8" fill="#cbd5e1">
+        <tspan fill="#f97316" font-weight="900">\ </tspan>CLEF<tspan fill="#f97316" font-weight="900"> //</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom Frame Bars ("====") -->
+    <rect x="195" y="473" width="210" height="3" rx="1.5" fill="#3b4254" />
+    <rect x="180" y="482" width="240" height="8" rx="4" fill="url(#tfrb-sunset)" opacity="0.8" />
+  </g>
+
+  <!-- 3. DIRECT DRIVE SPEC / TELEMETRY RAIL (BOTTOM) -->
+  <!-- // 200MS // SUB SYSTEM 1 // DIRECT DRIVE // LOW LEVEL // -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="3.5">
+    <rect x="30" y="534" width="540" height="32" rx="6" fill="#0d0f15" stroke="#252a38" stroke-width="1.2" />
+    
+    <text x="300" y="554" fill="#94a3b8">
+      <tspan fill="#7c3aed">// </tspan>200MS 
+      <tspan fill="#ec4899"> // </tspan>SUB SYSTEM 1 
+      <tspan fill="#f97316"> // </tspan>DIRECT DRIVE 
+      <tspan fill="#7c3aed"> // </tspan>LOW LEVEL 
+      <tspan fill="#f97316">//</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Based Clef (`bclef`) — 1-Page Quickstart Reference</title>
+  <meta name="description" content="Quickstart reference for installing, configuring, and running Based Clef across Web Studio, CLI, Desktop HUD, MCP, and Python SDK.">
+  <style>
+    :root {
+      --bg: #090c12;
+      --panel: #10151f;
+      --border: #222d40;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --p1: #ff33cc;
+      --p2: #ff6b2b;
+      --cyan: #38bdf8;
+      --green: #34d399;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.55;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .spec {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .subtitle { color: var(--muted); font-size: 1.05rem; max-width: 780px; }
+    h2 {
+      font-size: 1.2rem;
+      color: var(--text);
+      margin: 1.85rem 0 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    h2 span.step {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: #fff;
+      background: #0284c7;
+      border-radius: 4px;
+      padding: 0.12rem 0.48rem;
+      font-weight: 700;
+    }
+    pre {
+      background: #06080d;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.15rem;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    code { font-family: var(--mono); color: var(--cyan); }
+    .comment { color: #64748b; }
+    .flag { color: var(--p2); }
+    .str { color: var(--green); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.15rem;
+    }
+    .card h3 { font-size: 1rem; color: var(--text); margin-bottom: 0.4rem; }
+    .card p { font-size: 0.9rem; color: var(--muted); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 1.25rem;
+      font-size: 0.9rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.65rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--cyan); font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; }
+    tr:last-child td { border-bottom: none; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    footer a { color: var(--cyan); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="spec">BASED CLEF • SYSTEM 1 COMPUTER-USE REFERENCE</div>
+      <h1>Based Clef (<code>bclef</code>) Quickstart</h1>
+      <p class="subtitle">
+        Sub-second browser and Linux desktop automation driven by Cloudflare Clef decision models
+        (<code>@cf/cloudflare/clef-flash</code>), Intent-to-Playbook compilation, Web Studio, and Human-in-the-Loop safety gates.
+      </p>
+    </header>
+
+    <h2><span class="step">01</span> Install &amp; Run Instant Sandbox Demo</h2>
+    <pre>git clone https://github.com/paschalla/based-clef.git
+cd based-clef
+python3 -m venv .venv &amp;&amp; ./.venv/bin/pip install -e <span class="str">".[all]"</span>
+
+<span class="comment"># Verify readiness &amp; run local demos (zero API keys required with --offline)</span>
+./.venv/bin/bclef doctor
+./.venv/bin/bclef demo <span class="flag">--portal --offline --headless</span>
+./.venv/bin/bclef studio <span class="flag">--offline --open</span></pre>
+
+    <h2><span class="step">02</span> Configure Cloudflare Workers AI (<code>chmod 600</code>)</h2>
+    <pre><span class="comment"># Interactive setup wizard (writes ~/.config/based-clef/env with 0600 permissions)</span>
+./.venv/bin/bclef init</pre>
+
+    <h2><span class="step">03</span> Intent → Blueprint → Execution Modes</h2>
+    <pre><span class="comment"># A. Preview compiled Action Sequence Blueprint without clicking anything</span>
+./.venv/bin/bclef plan <span class="str">"Open wikipedia.org -&gt; search 'Alan Turing' -&gt; open article"</span>
+
+<span class="comment"># B. Direct Drive with #ff33cc target outlines &amp; RAM-only form credentials</span>
+./.venv/bin/bclef run <span class="str">"Log in with the given email and password"</span> \
+  <span class="flag">--url</span> <span class="str">"file://$PWD/decision_agent/demo/login.html"</span> \
+  <span class="flag">-d</span> email=operator@example.com <span class="flag">-d</span> password=hunter2 <span class="flag">--highlight</span> \
+  <span class="flag">--save-playbook</span> login.playbook.json
+
+<span class="comment"># C. Blueprint Preview Gate (--preview) or Step-by-Step Co-Pilot (--step)</span>
+./.venv/bin/bclef run <span class="str">"Search wikipedia.org for 'Alan Turing' and open the article"</span> <span class="flag">--preview</span>
+
+<span class="comment"># D. Launch Web Studio, Floating X11 HUD, MCP Server, or Unix Socket IPC</span>
+./.venv/bin/bclef studio <span class="flag">--port</span> 8765
+./.venv/bin/bclef gui
+./.venv/bin/bclef mcp
+./.venv/bin/bclef ipc</pre>
+
+    <h2><span class="step">04</span> 3-Tier Decision Ladder &amp; Probability Gates</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Model</th>
+          <th>Role &amp; Trigger</th>
+          <th>Typical Latency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Ladder 0</strong></td>
+          <td><code>@cf/cloudflare/clef-flash</code></td>
+          <td>Single-pass calibrated probabilities over <code>P1[target]</code>, <code>P2[action]</code>, <code>P3[done]</code>, <code>P4[sensitive]</code> (gate &ge; <code>0.70</code>).</td>
+          <td>~200–350 ms</td>
+        </tr>
+        <tr>
+          <td><strong>Ladder 1–2</strong></td>
+          <td><code>@cf/meta/llama-3.3-70b-instruct-fp8-fast</code></td>
+          <td>Compact &le;2-sentence stage-aware hint rewriter when Clef confidence &lt; <code>0.70</code>; re-queries Clef.</td>
+          <td>~750 ms</td>
+        </tr>
+        <tr>
+          <td><strong>Ladder 3+</strong></td>
+          <td><code>@cf/meta/llama-4-scout-17b-16e-instruct</code></td>
+          <td>Multimodal escalation fallback if Clef remains uncertain after <code>max_attempts=3</code>.</td>
+          <td>~1.2 s</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Zero-Leak Secret Isolation</h3>
+        <p>Passwords mask as <code>***</code> in DOM snapshots and never enter Clef/LLM prompts or exported Playbooks. Secrets live in RAM and persist to <code>~/.config/based-clef/secrets.env</code> (<code>0600</code>) only upon task completion.</p>
+      </div>
+      <div class="card">
+        <h3>Sensitive &amp; OAuth Gates</h3>
+        <p>Irreversible clicks (<code>P4[sensitive] &ge; 0.5</code> or payment/delete keywords) and OAuth flows pause execution and surface an interactive Approve/Deny banner in Studio, CLI, or HUD.</p>
+      </div>
+      <div class="card">
+        <h3>Clef Schema Guardrails</h3>
+        <p>Guarantees &ge;2 choice criteria even on blank/loading DOMs (preventing HTTP 422), caps screenshots at 1 JPEG frame (<code>quality=60</code>), and strips base64 from <code>training.jsonl</code>.</p>
+      </div>
+    </div>
+
+    <footer>
+      <span>Based Clef (<code>based-clef</code>) • Apache-2.0 License</span>
+      <a href="./index.html">&larr; Back to Overview</a>
+    </footer>
+  </div>
+</body>
+</html>

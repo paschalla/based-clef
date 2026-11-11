@@ -1,0 +1,41 @@
+{
+  "schema": "based-clef/playbook@1",
+  "raw_intent": "Log in with the given email and password",
+  "goal": "Log in with the given email and password",
+  "start_url": null,
+  "driver": "browser",
+  "required_keys": [
+    "email",
+    "password"
+  ],
+  "parameters": {},
+  "stages": [
+    {
+      "id": 1,
+      "intent": "Fill \"Email\"",
+      "kind": "fill",
+      "target_hint": "Email",
+      "value_key": "email",
+      "sensitive": false,
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "intent": "Fill \"Password\"",
+      "kind": "fill",
+      "target_hint": "Password",
+      "value_key": "password",
+      "sensitive": false,
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "intent": "Click \"Sign in\"",
+      "kind": "click",
+      "target_hint": "Sign in",
+      "value_key": "",
+      "sensitive": false,
+      "status": "pending"
+    }
+  ]
+}
